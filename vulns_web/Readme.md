@@ -1,0 +1,2 @@
+  - [IDOR](idor/Readme.md)
+  - [SSRF](SSRF/Readme.md)
