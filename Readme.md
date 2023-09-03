@@ -1,6 +1,6 @@
 # Puesta en Producción Segura
-- Pruebas de aplicaciones.
+- [Unidad 1 - Pruebas de aplicaciones](pruebas/Readme.md).
 - Determinación del nivel de seguridad requerido por aplicaciones.
-- Detección y corrección de vulnerabilidades de aplicaciones web [Acceder](vulns_web/Readme.md).
+- [Unidad 3 - Detección y corrección de vulnerabilidades de aplicaciones web](vulns_web/Readme.md).
 - Detección de problemas de seguridad en aplicaciones para dispositivos móviles.
 - Implantación de sistemas seguros de desplegado de software.
