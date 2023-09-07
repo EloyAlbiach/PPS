@@ -8,9 +8,11 @@ Imaginemos una aplicación web de un hospital especializado en oncología, a la 
 
 Nos conectamos a la página del hospital con nuestro usuario:
 
-`https://hospitalEjemplo.com/historiales/usuarios?user=3245`
+!!! Ací cal una imatge del formulari d'exemple !!!
 
 Al fijarnos en la URL, observamos la variable "**user**" seguida de un valor, supuestamente, nuestro identificador en la base de datos. ¿Y si cambiamos el identificador?
+
+`https://hospitalEjemplo.com/historiales/usuarios?user=3245`
 
 Modificamos el identificador por otro al azar, esperando que esté registrado en la base de datos:
 
