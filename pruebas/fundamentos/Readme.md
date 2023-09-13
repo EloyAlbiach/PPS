@@ -26,3 +26,16 @@ Ejemplo de código escrito en Python.
 ![Ejemplo de código escrito en Java](_images/codi_Java.png)
 
 Ejemplo de código escrito en Java.
+
+Tanto el lenguaje ensamblador como cualquiera de alto nivel, al final, deben ser traducidos al lenguaje máquina para que sea entendible por el procesador:
+
+![Traducción de lenguaje ensamblador a código máquina](_images/Assembly-language.jpg)
+
+(Imagen obtenida de https://fineproxy.org/es/wiki/assembly-language/)
+
+
+Ejemplo de un programa realizado en C:
+
+![Programa en C compilado a código máquina](_images/BLOG-COMPILER-COLOUR.jpg)
+
+(Imagen obtenida de: https://program-using-gnu-cpp.blogspot.com/p/getting-up-and-running_19.html)
