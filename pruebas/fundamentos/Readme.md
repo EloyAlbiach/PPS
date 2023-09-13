@@ -6,6 +6,7 @@ Una posible clasificación de los lenguajes de programación podría ser en func
 
 ## Lenguajes de bajo nivel
 - Lenguaje máquina: Secuencia compuesta de unos y ceros (sistema binario).
+
 ![Lenguaje Máquina](_images/Lenguaje-maquina.webp)
 
 (Imagen obtenida de: https://www.diarlu.com/lenguajes-de-programacion/)
