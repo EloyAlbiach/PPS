@@ -11,7 +11,8 @@ Una posible clasificación de los lenguajes de programación podría ser en func
 (Imagen obtenida de: https://www.diarlu.com/lenguajes-de-programacion/)
 
 - Lenguaje ensamblador: Se construye a partir de instrucciones que comienzan a ser más entendibles para un humano, aunque se trata de un lenguaje muy dependiente del procesador y complejo a la hora de realizar aplicaciones medianas o grandes.
-![Lenguaje Ensamblador](_images/assembler.jpg)
+
+<img src="_images/assembler.jpg" alt="Ejemplo de lenguaje Ensamblador" width="60%"/>
 
 (Imagen obtenida de: https://www.redbubble.com/es/i/tarjeta-de-felicitacion/C%C3%B3digo-lenguaje-ensamblador-de-Melic93/30331310.5MT14)
 ## Lenguajes de alto nivel
@@ -29,9 +30,9 @@ Ejemplo de código escrito en Java.
 
 Tanto el lenguaje ensamblador como cualquiera de alto nivel, al final, deben ser traducidos al lenguaje máquina para que sea entendible por el procesador:
 
-![Traducción de lenguaje ensamblador a código máquina](_images/Assembly-language.jpg)
+<img src="_images/Assembly-language.jpg" alt="Traducción de lenguaje ensamblador a código máquina" width="60%"/>
 
-(Imagen obtenida de https://fineproxy.org/es/wiki/assembly-language/)
+(Imagen obtenida de: https://fineproxy.org/es/wiki/assembly-language/)
 
 
 Ejemplo de un programa realizado en C:

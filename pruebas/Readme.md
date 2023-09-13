@@ -9,7 +9,7 @@
 - Se han evaluado los lenguajes de programación de acuerdo a la infraestructura de seguridad que proporcionan.
 
 ## [1.1 Fundamentos de programación](fundamentos/Readme.md)
-## 1.2 Lenguajes de programación interpretados y compilados
+## [1.2 Lenguajes de programación interpretados y compilados](lenguajes/Readme.md)
 ## 1.3 Código fuente y entornos de desarrollo
 ## 1.4 Ejecución de software
 ## 1.5 Elementos principales de los programas
