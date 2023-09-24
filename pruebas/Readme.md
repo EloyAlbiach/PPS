@@ -16,7 +16,6 @@
 ## 1.6 Tipos de pruebas
 ### 1.6.1 Pruebas de caja blanca
 ### 1.6.2 Pruebas de caja negra. Fuzzing
-### 1.6.3 Pruebas automatizadas. GitHub Actions
 ### Ejercicios
 ## 1.7 Seguridad en los lenguajes de programación y sus entornos de ejecución (Sandboxes)
 ## Bibliografía

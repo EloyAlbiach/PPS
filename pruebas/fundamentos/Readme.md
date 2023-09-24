@@ -36,7 +36,7 @@ Tanto el lenguaje ensamblador como cualquiera de alto nivel, al final, deben ser
 (Imagen obtenida de: https://fineproxy.org/es/wiki/assembly-language/)
 
 
-Ejemplo de un programa realizado en C:
+Ejemplo de un programa realizado en C++:
 
 ![Programa en C compilado a código máquina](_images/BLOG-COMPILER-COLOUR.jpg)
 
