@@ -10,7 +10,7 @@
 
 ## [1.1 Fundamentos de programación](fundamentos/Readme.md)
 ## [1.2 Lenguajes de programación interpretados y compilados](lenguajes/Readme.md)
-## 1.3 Código fuente y entornos de desarrollo
+## [1.3 Código fuente y entornos de desarrollo](codfuente/Readme.md)
 ## 1.4 Ejecución de software
 ## 1.5 Elementos principales de los programas
 ## 1.6 Tipos de pruebas
