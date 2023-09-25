@@ -68,6 +68,94 @@ Se pueden concatenar cadenas usando el operador suma (+):
 
 ![Ejemplo de concatenación de cadenas](_images/concatenar_cadenas.png)
 
+### 1.3.1.4 Operadores
+
+Operador | Descripción | Ejemplo
+---------|-------------|--------
+ "+" | Suma y concatenación | x + y
+ "-" | Resta | x - y
+ "*" | Multiplicación | x * y
+ "/" | División con decimales | x / y 
+ "%" | Obtener el resto de la división | x % y
+ "**" | Elevar un valor a otro | x ** y
+ "//" | División entera (sin decimales), redondea al entero más bajo| x // y
+ "="  | Asignación | x = 23
+ "+=" | Incremento | x += 5 equivalente a x = x + 5
+ "-=" | Decremento | x -= 6 equivalente a x = x - 6
+ "==" | Comprobar si igual | x == y (True si x es igual a y)
+ "!=" | Comprobar si distinto | x != y (True si x es distinto de y)
+ "<" | Menor que | x < y (True si x es menor que y)
+ ">" | Mayor que | x > y (True si x es mayor que y)
+ "<="| Menor o igual | x <= y (True si x es menor o igual a y)
+ ">="| Mayot o igual | x >= y (True si x es mayot o igual a y)
+ and  | Operador lógico que comprueba que se cumplen todas las condiciones| (x > y ) and (x > z)
+ or | Operador lógico que comprueba que se cumple al menos una de las condiciones|(x > y ) or (x > z)
+ not| Negación de la condición | not(a < b) 
+
+ > Igual que tenemos += y -= también tenemos el resto de operadores *=, /=, etc.
+
+ ### 1.3.1.5 Decisiones
+
+Permiten realizar unas acciones u otras en función de si se cumple o no una condición. Las identaciones delimitan las acciones a realiza en cada caso.
+
+```Python
+m = 4
+n = 12
+if m > n:
+  # Acciones si se cumple la condición
+  print("m es el mayor")
+  # aquí pueden ir más acciones
+else:
+  # Acciones si no se cumple la condición
+  print("n es el mayor")
+  # aquí pueden ir más acciones
+print("Acciones independientes de la decisión")
+```
+
+Se puede producir el encadenamiento de decisiones para mejorar las opciones:
+
+```Python
+m = 4
+n = 12
+if m > n:
+  print("m es el mayor")
+elif m < n:
+  print("n es el mayor")
+else:
+  print("m y n son iguales")
+```
+
+ ### 1.3.1.6 Bucles WHILE y FOR
+ El bucle **WHILE**, permite que se realicen unas determinadas acciones mientras se cumpla una condición:
+
+ ```Python
+ p = 2
+ while p < 20:
+  print(p)
+  p *= 2
+ ```
+
+ El ejemplo anterior obtiene el productorio de 2 por si mismo mientras se cumpla que no se supera el valor de 20:
+
+ ![Ejemplo de bucle WHILE](_images/bucle_while.png)
+
+ Veremos otra de forma de realizar bucles pero mediante el comando **FOR**:
+
+ ![Ejemplo de bucle FOR](_images/bucle_for.png)
+
+ Otro ejemplo:
+
+  ![Otro ejemplo de bucle FOR](_images/bucle_for_II.png)
+
+ ### 1.3.1.7 Trabajando con Arrays
+
+ ![Operaciones con arrays](_images/arrays.png)
+
+  ### 1.3.1.8 Funciones
+Crea subprogramas que serán llamados por el programa principal u otros subprogramas. De esta forma se consigue reutilizar código.
+
+![Ejemplo de función x elevado a y](_images/funciones.png)
+
 ## 1.3.2 Entornos de desarrollo
 
 
