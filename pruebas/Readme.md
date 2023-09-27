@@ -24,3 +24,4 @@
 - Pruebas de caja blanca. Complejidad ciclomática, (2020), [en línea]. Valencia: Universidad Politécnica de Valencia. Disponible en: http://www.upv.es/visor/media/c06721b5-27f7-1143-8799-690e91435140/c [2023, 27 de julio].
 - Pruebas de caja blanca. Técnica del camino básico, (2020), [en línea]. Valencia: Universidad Politécnica de Valencia. Disponible en: http://www.upv.es/visor/media/4bf1af41-c195-7f43-b6b5-2f5ea1d14c28/c [2023, 27 de julio].
 - Ejemplo de técnica de partición equivalente, (2020), [en línea]. Valencia: Universidad Politécnica de Valencia. Disponible en: http://www.upv.es/visor/media/f7951179-a975-484b-86f6-c297b4c0af5d/c [2023, 27 de julio].
+- Python Tutorial. (s.f.). W3Schools. https://www.w3schools.com/python/default.asp
