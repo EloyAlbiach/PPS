@@ -17,7 +17,7 @@
 ### 1.6.1 Pruebas de caja blanca
 ### 1.6.2 Pruebas de caja negra. Fuzzing
 ### Ejercicios
-## 1.7 Seguridad en los lenguajes de programación y sus entornos de ejecución (Sandboxes)
+## [1.7 Seguridad en los lenguajes de programación y sus entornos de ejecución (Sandboxes)](sandboxes/Readme.md)
 ## Bibliografía
 - Fernández Riera, M. (2022). Puesta en Producción Segura. España. Ra-Ma.
 - Pruebas de caja negra. Técnica de partición equivalente, (2020), [en línea]. Valencia: Universidad Politécnica de Valencia. Disponible en: http://www.upv.es/visor/media/e830b5bd-492e-db44-ba25-8246389fa44c/c [2023, 27 de julio].
