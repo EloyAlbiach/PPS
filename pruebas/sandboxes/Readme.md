@@ -21,4 +21,8 @@ Un ejemplo interesante de SandBox es **Paypal SandBox**, con el que se permite r
 Sobre entornos Windows, también existe otra herramienta llamada **Sandboxie** que permite la instalación de aplicaciones sin que exista riesgo para la máquina anfitriona, sin necesidad de instalar una máquina virtual, que suele ser más exigente en cuanto a requerimientos software y hardware [Enlace](https://github.com/sandboxie-plus/Sandboxie).
 
 ## Linux (Flatpak)
-En entornos GNU/Linux, existe un formato de paquetes llamado **Flatpak** que permite realizar una SandBox aislada del resto del sistema, llamada BubbleWrap.
+En entornos GNU/Linux, existe un formato de paquetes llamado **Flatpak** que permite realizar una SandBox aislada del resto del sistema, llamada BubbleWrap. Cada aplicación se encapsula dentro de una SandBox en la que están las librerías necesarias y el **RunTime** que es el entorno de ejecución de la aplicación, cualquier acceso fuera de la SandBox debe ser autorizado explicitamente. 
+
+![Arquitectura de Flatpak](_images/Flatpak_arquitectura.png)
+
+(Imagen obtenida de: https://www.tomshardware.com/news/flatpack-universal-linux-packaging-format,32137.html)
