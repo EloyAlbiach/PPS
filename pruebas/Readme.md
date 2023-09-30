@@ -14,7 +14,7 @@
 ## 1.4 Tipos de pruebas
 ### 1.4.1 Pruebas de caja blanca
 ### 1.4.2 Pruebas de caja negra. Fuzzing
-### Ejercicios
+### 1.4.3 Ejercicios
 ## [1.5 Seguridad en los lenguajes de programación y sus entornos de ejecución (Sandboxes)](sandboxes/Readme.md)
 ## Bibliografía
 - Fernández Riera, M. (2022). Puesta en Producción Segura. España. Ra-Ma.

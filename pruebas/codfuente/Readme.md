@@ -1,5 +1,5 @@
 [Volver al inicio](../Readme.md)
-# 1.3 Código fuente y entornos de desarrollo
+# 1.3 Elementos de un programa y entornos de desarrollo
 ## 1.3.1 Código fuente
 Entendemos como código fuente al conjunto de líneas de instrucciones que, una vez compilado, será ejecutado por el procesador. Para hablar del código fuente, nos centraremos en el lenguaje **PYTHON**.
 ### 1.3.1.1 Comentarios
@@ -193,6 +193,50 @@ Pero no siempre será tan fácil controlar TODAS las entradas, por lo que se est
 ![Ejemplo de uso de Finally](_images/excepciones_4.png)
 
 ## 1.3.2 Entornos de desarrollo
+Durante el proceso de desarrollo de una aplicación, el equipo de programación debe codificar los diferentes algoritmos que daran forma al producto final. Para ello, es posible utilizar multitud de aplicaciones o entornos de desarrollo que puedan facilitar esta tarea. La elección de un entorno u otro puede depender de las exigencias de la empresa o bien del gusto o costumbre que tenga el/la programador/a.
+
+Está claro que para escribir código puede servir casi cualquier editor, pues en general, estos han evolucionado mucho:
+
+### Editor "KATE" (Escritorio KDE GNU/Linux)
+Kate es un editor bastante simple en apariencia, disponible por defecto en entornos con escritorio KDE, no obstante, es capaz de detectar diversos lenguajes de programación y adaptar su contexto y estética, en función de ellos, para facilitar la lectura de la programadora o programador:
+
+![Editor kate](_images/ex_kate.png)
+
+
+### Editor Notepad ++ (Windows)
+Se trata de otro sencillo editor, bastante conocido en el mundo Windows, también multilenguaje y con opciones de ser portable ( [Enlace](https://notepad-plus-plus.org/) ):
+
+<img src="_images/ex_notepad.webp" width="50%" alt="Editor Notepad++">
+
+
+Los **Entornos de Desarrollo** vienen a mejorar la experiencia de uso del personal de programación, mediante la instalación Plugins y otras herramientas, se consigue ofrecer un ecosistema donde se intenta que todo esté integrado. Existen versiones gratuitas y de pago.
+
+### Eclipse
+Desarrollado bajo el paraguas de la Fundación Eclipse, en la que se encuentran empresas como IBM, SuSe, RedHat, Borland, etc. Entorno multiplataforma y multilenguaje, muy utilizado en el ámbito de la programación Java ( [Enlace](https://eclipseide.org/) ):
+
+![Entorno Eclipse](_images/ex_eclipse.png)
+
+### NetBeans
+Desarrollado como un proyecto estudiantil de la Universidad Charles en Praga, fue adquirido por Sun Microsystems y posteriormente por Oracle. También multilenguaje y multiplataforma, muy usado en entornos Java ( [Enlace](https://netbeans.apache.org/) ):
+
+![Entorno NetBeans](_images/ex_netbeans.png)
+
+### JetBrains
+La compañía ofrece diferentes productos adaptados a cada uno de los lenguajes de programación, por ejemplo, en entornos web se conoce mucho **PHPStorm**, o **PyCharm** para programación en Python. Aunque el software es de pago, ofrece licencias gratuitas para el profesorado y el alumnado. Sus productos son muy apreciados y bien considerados ( [Enlace](https://www.jetbrains.com/) ):
+
+![Entorno JetBrains, ejemplo Pycharm para Python](_images/ex_pycharm.jpg)
+
+### Visual Studio Code
+Propiedad de Microsoft, se ofrece como versión gratuita multiplataforma y multilenguaje, según [Wikipedia](https://en.wikipedia.org/wiki/Visual_Studio_Code), en una encuesta realizada en 2023, se erigió como el entorno más popular entre los programadores y programadoras ( [Enlace](https://code.visualstudio.com/) ):
+
+![Entorno Visual Studio Code](_images/ex_VSC.png)
+
+> Existen muchísimos otros entornos, entre ellos [Brackets](https://brackets.io/) o [Atom](https://github.com/atom/atom).
+
+
+
+
+
 
 
 
