@@ -12,7 +12,7 @@
 ## [1.2 Lenguajes de programación interpretados y compilados](lenguajes/Readme.md)
 ## [1.3 Ejecución de Software](ejecucion/Readme.md)
 ## [1.4 Elementos de un programa y entornos de desarrollo](codfuente/Readme.md)
-## 1.5 Tipos de pruebas
+## [1.5 Tipos de pruebas](tipospruebas/Readme.md)
 ### 1.5.1 Pruebas de caja blanca
 ### 1.5.2 Pruebas de caja negra. Fuzzing
 ### 1.5.3 Ejercicios
