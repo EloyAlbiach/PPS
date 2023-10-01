@@ -1,8 +1,8 @@
 [Volver al inicio](../Readme.md)
-# 1.3 Elementos de un programa y entornos de desarrollo
-## 1.3.1 Código fuente
+# 1.4 Elementos de un programa y entornos de desarrollo
+## 1.4.1 Código fuente
 Entendemos como código fuente al conjunto de líneas de instrucciones que, una vez compilado, será ejecutado por el procesador. Para hablar del código fuente, nos centraremos en el lenguaje **PYTHON**.
-### 1.3.1.1 Comentarios
+### 1.4.1.1 Comentarios
 Los comentarios permite añadir información al código para que pueda ser más entendible. EStos comentarios serán ignorados por el procesador.
 La forma de escribir un comentario en Python es:
 
@@ -10,14 +10,14 @@ La forma de escribir un comentario en Python es:
 #Esto es un comentario
 ```
 
-### 1.3.1.2 Imprimir texto
+### 1.4.1.2 Imprimir texto
 Nos permite mostrar texto al usuario del programa para interactuar con él:
 
 ```Python
 print ("Este texto será mostrado al usuario...")
 ```
 
-### 1.3.1.3 Variables
+### 1.4.1.3 Variables
 Las variables permiten guardar o inicializar valores/datos durante la ejecución. En Python se construyen mediante caracteres alfanuméricos y/o la barra baja "_".
 
 Son sensibles a las mayúsculas y minúsculas, por lo que no es lo mismo "valor" que "Valor" o "vAlor", se trataría de variables distintas.
@@ -68,7 +68,7 @@ Se pueden concatenar cadenas usando el operador suma (+):
 
 ![Ejemplo de concatenación de cadenas](_images/concatenar_cadenas.png)
 
-### 1.3.1.4 Operadores
+### 1.4.1.4 Operadores
 
 Operador | Descripción | Ejemplo
 ---------|-------------|--------
@@ -94,7 +94,7 @@ Operador | Descripción | Ejemplo
 
  > Igual que tenemos += y -= también tenemos el resto de operadores *=, /=, etc.
 
- ### 1.3.1.5 Decisiones
+ ### 1.4.1.5 Decisiones
 
 Permiten realizar unas acciones u otras en función de si se cumple o no una condición. Las identaciones delimitan las acciones a realiza en cada caso.
 
@@ -125,7 +125,7 @@ else:
   print("m y n son iguales")
 ```
 
- ### 1.3.1.6 Bucles WHILE y FOR
+ ### 1.4.1.6 Bucles WHILE y FOR
  El bucle **WHILE**, permite que se realicen unas determinadas acciones mientras se cumpla una condición:
 
  ```Python
@@ -147,16 +147,16 @@ else:
 
   ![Otro ejemplo de bucle FOR](_images/bucle_for_II.png)
 
- ### 1.3.1.7 Trabajando con Arrays
+ ### 1.4.1.7 Trabajando con Arrays
 
  ![Operaciones con arrays](_images/arrays.png)
 
-  ### 1.3.1.8 Funciones
+  ### 1.4.1.8 Funciones
 Crea subprogramas que serán llamados por el programa principal u otros subprogramas. De esta forma se consigue reutilizar código.
 
 ![Ejemplo de función x elevado a y](_images/funciones.png)
 
-### 1.3.1.9 Entrada de usuario
+### 1.4.1.9 Entrada de usuario
 En ocasiones, según las necesidades del programa, se requiere la interacción del usuario para obtener información necesaria para el funcionamiento dela aplicación. En Python, esta entrada de datos por parte del usuario se consigue dde la siguiente forma:
 
 En la versión 2.7:
@@ -173,7 +173,7 @@ dato_entrada = input("Indique su DNI: ")
 print("El número de DNI obtenido es: " + dato_entrada)
 ```
 
-### 1.3.1.10 Manejo de excepciones
+### 1.4.1.10 Manejo de excepciones
 Cuando se desarrolla una aplicación, no podemos confiar en el uso que un usuario potencial pueda hacer, por ejemplo, de los valores de entrada, ya que estos pueden hacer que, si no se tiene previsión, lleven el flujo del programa a un estado de error, a una detención brusca de la aplicación, es decir a una **EXCEPCIÓN**, algo no deseable. Para evitar esta circunstancia, se deben establecer controles adecuados y para ello, se establece el manejo de excepciones.
 
 Si por ejemplo tenemos el siguiente programa que intenta realizar la división de dos números, y el usuario indica como dividendo el valor "**12**" y como divisor el valor "**0**", obtenemos el error de división por cero:
@@ -192,7 +192,7 @@ Pero no siempre será tan fácil controlar TODAS las entradas, por lo que se est
 
 ![Ejemplo de uso de Finally](_images/excepciones_4.png)
 
-## 1.3.2 Entornos de desarrollo
+## 1.4.2 Entornos de desarrollo
 Durante el proceso de desarrollo de una aplicación, el equipo de programación debe codificar los diferentes algoritmos que daran forma al producto final. Para ello, es posible utilizar multitud de aplicaciones o entornos de desarrollo que puedan facilitar esta tarea. La elección de un entorno u otro puede depender de las exigencias de la empresa o bien del gusto o costumbre que tenga el/la programador/a.
 
 Está claro que para escribir código puede servir casi cualquier editor, pues en general, estos han evolucionado mucho:

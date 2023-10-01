@@ -1,5 +1,5 @@
 [Volver al inicio](../Readme.md)
-# 1.7 Seguridad en los lenguajes de programación y sus entornos de ejecución (Sandboxes)
+# 1.6 Seguridad en los lenguajes de programación y sus entornos de ejecución (Sandboxes)
 Podemos entender una SandBox (caja de arena), como una herramienta que permite realizar pruebas de código sin que estas pruebas puedan afectar a la seguridad del sistema anfitrión. También se pueden utilizar para estudiar el efecto de diferentes tipos de **MALWARE** sin peligro de ser infectados.
 
 ## Virtualización
