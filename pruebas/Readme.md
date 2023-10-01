@@ -25,3 +25,4 @@
 - Ejemplo de técnica de partición equivalente, (2020), [en línea]. Valencia: Universidad Politécnica de Valencia. Disponible en: http://www.upv.es/visor/media/f7951179-a975-484b-86f6-c297b4c0af5d/c [2023, 27 de julio].
 - Python Tutorial. (s.f.). W3Schools. https://www.w3schools.com/python/default.asp
 - Armasu, L.(22 de junio de 2016). 'Flatpak' Is The Universal Linux Packaging Format That Puts 'Security First', [en línea]. tom's HARDWARE. Disponible en: https://www.tomshardware.com/news/flatpack-universal-linux-packaging-format,32137.html [2023, 28 de septiembre]
+- Scott, T. (29 de julio de 2019). The Fetch-Execute Cycle: What's Your Computer Actually Doing? [Video]. Youtube. https://www.youtube.com/watch?v=Z5JC9Ve1sfI
