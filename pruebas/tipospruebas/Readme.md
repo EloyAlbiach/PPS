@@ -29,10 +29,77 @@ Se trata de un tipo de pruebas _**unitarias**_. Se caracteriza por tener acceso 
 Existen herramientas que nos permitirán conocer qué porcentaje de cobertura tienen nuestras pruebas. El éxito o fracaso depende mucho del _banco de pruebas_ utilizado para probar las aplicaciones, no solo el porcentaje de cobertura es importante, también los valores de prueba.
 
 ### Prueba del camino básico. Representación de grafos.
-Se trata de un tipo de prueba adecuado para los algoritmos más sencillos, nos ayudaremos de grafos para determinar los posibles caminos que se deben evaluar. ESte tipo de prueba nos permitirá calcular la **COMPLEJIDAD CICLOMÁTICA**.
+Se trata de un tipo de prueba adecuado para los algoritmos más sencillos, nos ayudaremos de grafos para determinar los posibles caminos que se deben evaluar. Este tipo de prueba nos permitirá calcular la **COMPLEJIDAD CICLOMÁTICA**.
 
-Según el tipo de estructura de código, le corresponderá un tipo de grafo, se enumeran a continuación:
+Según el tipo de estructura de código, le corresponderá un tipo de grafo, se enumeran a continuación las más básicas:
 
 - #### Secuencia
+Indica la ejecución de forma ordenada de las acciones.
+
+![Grafode secuencia](_images/secuencia.png)
+
+- #### Decisión (IF-ELSE)
+Si se cumple una condición, se realizan una o más acciones, en caso contrario, se realizan otras condiciones (o ninguna).
+
+![Grafo If-Else](_images/IF.png)
+
+- #### Bucle While
+Se evalua primero la condición y mientras se cumpla, se realizan las acciones indicadas, una vez deja de cumplirse la condición, se sale del bucle y continua el flujo del programa
+
+![Grafo While](_images/while.png)
+- #### Bucle Do-While
+Realiza un bucle que se repite mientras se cumpla la condición, con una característica, siempre se ejecuta al menos una acción aunque la condición no se cumpla.
+
+![Grafo Do-While](_images/do-while.png)
+
+> NOTA: En el diagrama de grafos, a los nodos que contienen una decisión se les llama **nodos predicado** y a las líneas que unen los nodos, **aristas**.
+
+### Prueba del camino básico
+Dado un algoritmo, deberemos preparar las pruebas de forma que se ejecuten todos los caminos posibles, o **caminos básicos**. En función de la cantidad de caminos posibles, el proceso de prueba será más o menos complejo. Para determinar la complejidad del algoritmo y determinar sus caminos básicos, utilizaremos la _**COMPLEJIDAD CICLOMÁTICA**_.
+
+La complejidad ciclomática (CC) se calcula de diferentes formas:
+
+```
+CC = Número_de_aristas - número_de_nodos + 2
+
+CC = Número_nodos_predicado + 1
+
+CC = Número_de_zonas
+```
+
+Para entender mejor este cálculo, se muestra un ejemplo:
+
+Sumar los N números naturales. Dado un número natural como entrada (0, 1, 2, ....), realizar un algoritmo que sume dicho número y los naturales inferiores hasta 0. Por ejemplo, si nos pasan como entrada el número 5, tendremos **5 + 4 + 3 + 2 + 1 + 0 = 15**.
+
+El diagrama de flujo podría ser parecido a este:
+
+![Grafo para sumar n naturales](_images/suma_naturales.png)
+
+Realizamos el cálculo:
+- Número de nodos = 6
+- número de aristas = 6
+- Número de nodos predicado = 1
+
+![grafo suma n naturales numerado](_images/sumar_n_naturales_nodos_numerados.png)
+
+Así pues, las fórmulas anteriores con los valores serían:
+
+- CC = Número_de_aristas - número_de_nodos + 2 = 6 - 6 + 2 = **2**
+- CC = Número_nodos_predicado + 1 = 1 + 1 = **2**
+- CC = Número_de_zonas = **2**
+
+Nos falta ver el número de zonas para ver si se cumplen todas las fórmulas...
+
+![grafo suma n naturales zonas](_images/suma_n_naturales_zonas.png)
+
+Los caminos básicos son:
+
+- Camino 1: **1-2-3-5-6**
+- Camino 2: **1-2-3-4-3-5-6**
+
+
+
+
+
 
 
