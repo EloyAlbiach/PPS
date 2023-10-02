@@ -69,11 +69,22 @@ CC = Número_de_zonas
 
 Para entender mejor este cálculo, se muestra un ejemplo:
 
-Sumar los N números naturales. Dado un número natural como entrada (0, 1, 2, ....), realizar un algoritmo que sume dicho número y los naturales inferiores hasta 0. Por ejemplo, si nos pasan como entrada el número 5, tendremos **5 + 4 + 3 + 2 + 1 + 0 = 15**.
+Sumar los N números naturales. Dado un número natural como entrada (0, 1, 2, ....), realizar un algoritmo que sume dicho número y los naturales inferiores hasta 0. Por ejemplo, si nos pasan como entrada el número 4, tendremos **4 + 3 + 2 + 1 + 0 = 10**.
 
 El diagrama de flujo podría ser parecido a este:
 
 ![Grafo para sumar n naturales](_images/suma_naturales.png)
+
+Y la traza del programa, para un valor de 4 sería:
+
+n | suma | contador
+--|--|--
+4|0|1
+ "|1|2
+ "|3|3
+ "|6|4
+ "|10|5
+
 
 Realizamos el cálculo:
 - Número de nodos = 6
@@ -96,6 +107,8 @@ Los caminos básicos son:
 
 - Camino 1: **1-2-3-5-6**
 - Camino 2: **1-2-3-4-3-5-6**
+
+## 1.5.2 Pruebas de caja negra
 
 
 
