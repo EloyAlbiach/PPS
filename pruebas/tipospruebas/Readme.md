@@ -108,7 +108,11 @@ Los caminos básicos son:
 - Camino 1: **1-2-3-5-6**
 - Camino 2: **1-2-3-4-3-5-6**
 
-## 1.5.2 Pruebas de caja negra
+## 1.5.2 Ejemplo de pruebas con Python y "UnitTest"
+
+## 1.5.3 Cobertura de las pruebas
+
+## 1.5.4 Pruebas de caja negra
 
 
 
