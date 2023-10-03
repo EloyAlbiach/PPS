@@ -3,7 +3,7 @@
 ## 1.4.1 Código fuente
 Entendemos como código fuente al conjunto de líneas de instrucciones que, una vez compilado, será ejecutado por el procesador. Para hablar del código fuente, nos centraremos en el lenguaje **PYTHON**.
 ### 1.4.1.1 Comentarios
-Los comentarios permite añadir información al código para que pueda ser más entendible. EStos comentarios serán ignorados por el procesador.
+Los comentarios permite añadir información al código para que pueda ser más entendible. Estos comentarios serán ignorados por el procesador.
 La forma de escribir un comentario en Python es:
 
 ```Python
