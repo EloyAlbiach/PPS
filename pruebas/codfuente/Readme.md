@@ -7,7 +7,13 @@ Los comentarios permite añadir información al código para que pueda ser más 
 La forma de escribir un comentario en Python es:
 
 ```Python
-#Esto es un comentario
+#Esto es un comentario en una línea
+
+'''
+Este 
+es un
+comentario multilínea
+'''
 ```
 
 ### 1.4.1.2 Imprimir texto
