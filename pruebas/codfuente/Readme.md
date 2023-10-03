@@ -149,6 +149,10 @@ else:
 
  ![Ejemplo de bucle FOR](_images/bucle_for.png)
 
+ Bucle for delimitado entre dos valores:
+
+ ![ejemplo bucle for delimitado por dos valores](_images/bucle_for_delimitado.png)
+
  Otro ejemplo:
 
   ![Otro ejemplo de bucle FOR](_images/bucle_for_II.png)
