@@ -9,7 +9,7 @@ Para entender el proceso de ejecución de un programa, deberemos tener al menos 
 - En el contador de programa (**P**rogram **C**ounter), se almacena, en función de la arquitectura, la dirección de memoria de la instrucción en curso o bien la dirección de memoria de la siguiente instrucción a ejecutar.
 - Todo el proceso de ejecución va sincronizado con un reloj interno de la CPU. Cada ciclo de reloj se realizará una instrucción.
 
-![Esquema de la CPU](_images/cpu.drawio.png)
+![Esquema de la CPU](_images/cpu.jpg)
 
 Un ejemplo del funcionamiento de la CPU está disponible en la siguiente dirección URL: <a href="https://www.youtube.com/watch?v=Z5JC9Ve1sfI" target="_blank">Video de Youtube</a>
 
