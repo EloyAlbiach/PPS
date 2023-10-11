@@ -12,8 +12,10 @@ Existen, no obstante, otros ejemplos de SandBoxes más centrados en la ejecució
 
 * https://pythonsandbox.dev/?file=main.py
 * https://pythonsandbox.com/
-
-* Específicas para entornos web, por ejemplo **Codepen** [Enlace](https://codepen.io/marcysutton/pen/ZYqjPj)
+* https://www.tutorialspoint.com/compile_c_online.php (SandBox para programación en C)
+* https://cpp.sh/ (Específico para C++)
+* https://www.programiz.com/python-programming/online-compiler/ (SandBox para diversos lenguajes Python, Java, C/C++/C#, Javascript, PHP, Go, ...)
+* https://codepen.io/marcysutton/pen/ZYqjPj (Para entornos web)
 ## PAYPAL SandBox
 Un ejemplo interesante de SandBox es **Paypal SandBox**, con el que se permite realizar pruebas de pasarelas de pago de PayPal sin correr riesgos [Enlace](https://developer.paypal.com/home).
 

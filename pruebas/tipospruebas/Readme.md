@@ -36,21 +36,21 @@ Según el tipo de estructura de código, le corresponderá un tipo de grafo, se 
 - #### Secuencia
 Indica la ejecución de forma ordenada de las acciones.
 
-![Grafode secuencia](_images/secuencia.png)
+![Grafode secuencia](_images/secuencia.jpg)
 
 - #### Decisión (IF-ELSE)
 Si se cumple una condición, se realizan una o más acciones, en caso contrario, se realizan otras condiciones (o ninguna).
 
-![Grafo If-Else](_images/IF.png)
+![Grafo If-Else](_images/IF.jpg)
 
 - #### Bucle While
 Se evalua primero la condición y mientras se cumpla, se realizan las acciones indicadas, una vez deja de cumplirse la condición, se sale del bucle y continua el flujo del programa
 
-![Grafo While](_images/while.png)
+![Grafo While](_images/while.jpg)
 - #### Bucle Do-While
 Realiza un bucle que se repite mientras se cumpla la condición, con una característica, siempre se ejecuta al menos una acción aunque la condición no se cumpla.
 
-![Grafo Do-While](_images/do-while.png)
+![Grafo Do-While](_images/do-while.jpg)
 
 > NOTA: En el diagrama de grafos, a los nodos que contienen una decisión se les llama **nodos predicado** y a las líneas que unen los nodos, **aristas**.
 
@@ -67,13 +67,22 @@ CC = Número_nodos_predicado + 1
 CC = Número_de_zonas
 ```
 
+En función de la complejidad ciclomática, determinaremos la evaluación del riesgo del algoritmo
+
+Complejidad Ciclomática|Evaluación del riesgo del algoritmo
+--|--
+1 - 10|Algoritmo simple. Poco riesgo
+11 - 20|Algoritmo complejidad media. Riesgo moderado
+21 - 50|Algoritmo complejo. Alto riesgo
+\> 50|Algoritmo no testeable. Muy alto riesgo
+
 Para entender mejor este cálculo, se muestra un ejemplo:
 
 Sumar los N números naturales. Dado un número natural como entrada (0, 1, 2, ....), realizar un algoritmo que sume dicho número y los naturales inferiores hasta 0. Por ejemplo, si nos pasan como entrada el número 4, tendremos **4 + 3 + 2 + 1 + 0 = 10**.
 
 El diagrama de flujo podría ser parecido a este:
 
-![Grafo para sumar n naturales](_images/suma_naturales.png)
+![Grafo para sumar n naturales](_images/suma_naturales.jpg)
 
 Y la traza del programa, para un valor de 4 sería:
 
@@ -91,7 +100,7 @@ Realizamos el cálculo:
 - número de aristas = 6
 - Número de nodos predicado = 1
 
-![grafo suma n naturales numerado](_images/sumar_n_naturales_nodos_numerados.png)
+![grafo suma n naturales numerado](_images/sumar_n_naturales_nodos_numerados.jpg)
 
 Así pues, las fórmulas anteriores con los valores serían:
 
@@ -101,7 +110,7 @@ Así pues, las fórmulas anteriores con los valores serían:
 
 Nos falta ver el número de zonas para ver si se cumplen todas las fórmulas...
 
-![grafo suma n naturales zonas](_images/suma_n_naturales_zonas.png)
+![grafo suma n naturales zonas](_images/suma_n_naturales_zonas.jpg)
 
 Los caminos básicos son:
 
