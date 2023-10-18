@@ -119,6 +119,83 @@ Los caminos básicos son:
 
 ## 1.5.2 Ejemplo de pruebas con Python y "UnitTest"
 
+Una vez diseñado el algoritmo, debemos codificarlo y realizar pruebas de funcionamiento. En Python existen diferentes opciones, de las cuales, las más conocidas son **PyTest** y **UnitTest**.
+En nuestro caso, vamos a realizar las pruebas con **UnitTest**, para ello, crearemos una clase de prueba en un fichero de pruebas, independiente del programa a probar y llamaremos a la librería mediante un "import".
+
+> import unittest
+
+El fichero de pruebas deberá disponer de una clase que heredará de **unittest.TestCase**. Para realizar las pruebas, utilizaremos el fichero a probar, realizando llamadas a este desde la clase de pruebas y utilizando algunas de las siguientes sentencias:
+
+- .assertEqual(x, y): Verifica que x e y son iguales.
+- .assertTrue(x): Verifica que el valor de x es True.
+- .assertFalse(x): Verifica que el valor de x es False.
+- .assertRaises(x): Verifica que se genera una excepción.
+
+> Existen otras sentencias de prueba a utilizar como .assertIs(), .assertIn(), etc. (consultar la bibliografía de este capítulo).
+
+Para entender el funcionamiento, mejor un ejemplo, para ello, vamos a realizar un algoritmo que, dados 3 números enteros, determina cual de los 3 es el **mayor**.
+
+El diagrama de flujo (sin optimizar) podría ser este:
+
+![Diagrama de flujo mayor de tres](_images/major_3.jpg)
+
+En el que se observan 3 nodos **predicado** y por lo tanto, una complejidad ciclomática de 4 (3 nodos predicado + 1).
+
+Un código en Python que refleje el diagrama de flujo sería (mayor_de_tres.py):
+
+```Python
+def devuelve_mayor(a, b, c):
+    if a > b:
+        if a > c:
+            mayor = a
+        else:
+            mayor = c
+    else:
+        if b > c:
+            mayor = b
+        else:
+            mayor = c
+    return mayor 
+```
+
+El código para ejecutar las pruebas sería:
+
+```Python
+import unittest
+from mayor_de_tres import devuelve_mayor
+
+class TestMayorDeTres(unittest.TestCase):
+    def test_mayor(self):
+        self.assertEqual(devuelve_mayor(12, -3, 9), 12)
+
+    def test_mayor2(self):
+        self.assertEqual(devuelve_mayor(-12, -3, 0), 0)
+
+    def test_mayor3(self):
+        self.assertEqual(devuelve_mayor(-12, -3, -1), -1)
+
+    def test_mayor4(self):
+        self.assertIsNot(devuelve_mayor(-12, -3, -1), -12)
+
+    def test_mayor5(self):
+        self.assertEqual(devuelve_mayor(8, 15, 1), 15)
+
+if __name__ == '__main__':
+    unittest.main()
+```
+
+Si ejecutamos las pruebas en Visual Studio Code, obtenemos el siguiente resultado:
+
+![Test mayor de tres, resultado](_images/result_test_mayor_3.png)
+
+Imaginemos que forzamos un error en el test número 5 y en lugar de decir que esperamos un resultado de 15, decimos que esperamos un 8. Nos indicará que el resultado que esperamos (8), no coincide con el valor que devuelve la función para los datos que se pasan (15):
+
+![Fallo de test](_images/result_test_mayor_3_fail.png)
+
+Podemos utilizar **.assertFalse** para verificar que una comparación no va a ser cierta, o visto desde otro punto de vista, que la siguiente afirmación es falsa:
+
+![Uso de assertFalse](_images/test_assertFalse.png)
+
 ## 1.5.3 Cobertura de las pruebas
 
 ## 1.5.4 Pruebas de caja negra
