@@ -198,6 +198,44 @@ Podemos utilizar **.assertFalse** para verificar que una comparación no va a se
 
 ## 1.5.3 Cobertura de las pruebas
 
+Aunque gracias a nuestra intuición y buen hacer, podemos crear un buen banco de pruebas, es posible que alguna de las ramas del algoritmo quede sin probar, con el correspondiente peligro que esto supone. Una forma de medir la **cobertura** de nuestro banco de pruebas sobre el código, es utilizando herramientas externas que nos muestren esto de forma gráfica. Para ello vamos a utilizar **COVERAGE**.
+
+Necesitaremos instalarlo de la siguiente forma:
+
+> python3 -m pip install coverage
+
+Una vez instalado, lo llamaremos para que realice las pruebas mediante:
+
+![pruebas con coverage, ejecución de la prueba](_images/coverage_A.png)
+
+Una vez realizadas las pruebas mediante Coverage, crearemos un fichero XML que podrá ser utilizado, por ejemplo en Visual Studio Code y otro HTML (opcional), si queremos que se nos muestre en una página web como documentación.
+
+![creación XML y HTML de coverage](_images/coverage_B.png)
+
+Los resultados con los porcentajes se muestran a continuación (HTML):
+
+![coverage general](_images/coverage_C.png)
+
+Como se puede observar, la línea 6 nunca se ejecuta con el banco de pruebas que hemos elegido:
+
+![coverage missing](_images/coverage_D.png)
+
+Otra forma alternativa al formato HTML, sería utilizando un plugin para Visual Studio Code, este plugin se apoya en el XML que generamos con la orden **coverage xml** vista anteriormente:
+
+![Visual Studio Code Coverage plugin](_images/coverage_F.png)
+
+Que nos ofrece una forma alternativa (revisa el pie de pantalla para ver el porcentaje de cobertura):
+
+![Cobertura en VSC](_images/coverage_E.png)
+
+> NOTA: Cada vez que se modifica el código, se debe ejecutar de nuevo las sentencias:
+> - coverage run fichero.py
+> - coverage html
+> - coverage xml
+
+
+
+
 ## 1.5.4 Pruebas de caja negra
 
 

@@ -24,3 +24,4 @@
 - Armasu, L.(22 de junio de 2016). 'Flatpak' Is The Universal Linux Packaging Format That Puts 'Security First', [en línea]. tom's HARDWARE. Disponible en: https://www.tomshardware.com/news/flatpack-universal-linux-packaging-format,32137.html [2023, 28 de septiembre]
 - Scott, T. (29 de julio de 2019). The Fetch-Execute Cycle: What's Your Computer Actually Doing? [Video]. Youtube. https://www.youtube.com/watch?v=Z5JC9Ve1sfI
 - Testing en Python (s.f.), [en línea]. El libro de Python. https://ellibrodepython.com/python-testing [2023, 18 de octubre]
+- Coverage.py (s.f.), [en línea]. https://coverage.readthedocs.io/en/7.3.2/ [2023, 11 de julio]
