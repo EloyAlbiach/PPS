@@ -200,9 +200,45 @@ Podemos utilizar **.assertFalse** para verificar que una comparación no va a se
 
 Aunque gracias a nuestra intuición y buen hacer, podemos crear un buen banco de pruebas, es posible que alguna de las ramas del algoritmo quede sin probar, con el correspondiente peligro que esto supone. Una forma de medir la **cobertura** de nuestro banco de pruebas sobre el código, es utilizando herramientas externas que nos muestren esto de forma gráfica. Para ello vamos a utilizar **COVERAGE**.
 
-Necesitaremos instalarlo de la siguiente forma:
+Para trabajar de forma independiente y poder instalar librerías sin que afecte al sistema anfitrión, trabajaremos sobre entornos virtuales Python. El primer paso será instalar pipx:
 
-> python3 -m pip install coverage
+![Instalación de pipx](_images/paso1.png)
+
+Una vez pipx instalado, lo utilizaremos para instalar el entorno virtual de Python "**virtualenv**":
+
+![Instalación de virtualenv](_images/paso2.png)
+
+Ahora lo correcto, sería crear una carpeta para el proyecto en el que vamos a trabajar, y crear también el entorno virtual de ese proyecto (normalmente, por convención se llama venv al entorno virtual, aunque puede tener otro nombre, en este caso, se crea como carpeta oculta **.venv**):
+
+![Creación del proyecto](_images/paso3.png)
+
+![Vista del proyecto creado](_images/paso4.png)
+
+Dentro del proyecto de trabajo se crea el entorno virtual .venv utilizando la palabra clave "**venv**":
+
+![Creación del entorno virtual](_images/paso5.png)
+
+Si observamos, dentro de la carpeta .venv se han creado diferentes ficheros y subcarpetas que contienen el entorno virtual de Python y el que se podrán añadir las librerías que se necesiten, sin afectar al sistema anfitrión:
+
+![Vista del entorno virtual creado](_images/paso6.png)
+
+El entorno virtual se debe activar para que entre en funcionamiento, aparece el prefijo (.venv) indicando que se ha activado:
+
+![Activación del entorno virtual](_images/paso7.png)
+
+Y se desactiva con "**deactivate**":
+
+![Desactivación del entorno virtual](_images/paso8.png)
+
+No obstante, también puede ser activado directamente desde Visual Studio Code:
+
+![Activar entorno virtual desde Visual Studio Code](_images/paso9.png)
+
+![Seleccionar el entorno virtual](_images/paso10.png)
+
+Una vez activado el entorno virtual, instalaremos la libreria coverage dentro de este haciendo:
+
+> pip install coverage
 
 Una vez instalado, lo llamaremos para que realice las pruebas mediante:
 
