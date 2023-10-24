@@ -230,7 +230,7 @@ Y se desactiva con "**deactivate**":
 
 ![Desactivación del entorno virtual](_images/paso8.png)
 
-No obstante, también puede ser activado directamente desde Visual Studio Code:
+No obstante, también puede ser activado directamente desde Visual Studio Code (botón derecho del ratón sobre la zona marcada en rojo):
 
 ![Activar entorno virtual desde Visual Studio Code](_images/paso9.png)
 
