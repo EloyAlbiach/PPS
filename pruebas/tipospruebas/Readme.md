@@ -196,6 +196,28 @@ Podemos utilizar **.assertFalse** para verificar que una comparación no va a se
 
 ![Uso de assertFalse](_images/test_assertFalse.png)
 
+### 1.5.2.1 Test de Excepciones
+
+En el apartado [1.4.1.10](../codfuente/Readme.md) se introdujeron las "**Excepciones**" como una forma de controlar diferentes errores durante la ejecución de un programa. Las excepciones en este caso eran generadas por el sistema operativo en caso de dividir por cero. No obstante, el usuario puede definir sus propias excepiones tal como se muestra a continuación, utilizando "**raise**" e indicando el tipo de excepción:
+
+![Lanzando una excepción generada por el usuario](_images/divisor_exception.png)
+
+Si se quiere comprobar mediantes tests que realmente se genera la excepción, podemos utilizar "**assertRaises**" tal como se muestra en la siguiente imagen (hay que prestar atención a la disposición de la función y los parámetros de entrada, ya que no sigue el patrón habitual):
+
+![Testeando la generación de la excepción](_images/divisor_test_exception.png)
+
+### 1.5.2.2 Test parametrizado
+
+Cuando queremos probar muchos valores, escribir muchas líneas repetidas de código puede hacerse pesado, por ello, existe la posibilidad de utilizar los tests **PARAMETRIZADOS**, que permiten determinar previamente el banco de pruebas. Deberemos instalar primero la librería **parameterized**:
+
+> pip install parameterized
+
+![Imagen de la instalación de parameterized](_images/instalacion_parameterized.png)
+
+Se puede observar un ejemplo en la siguiente imagen:
+
+![Ejemplo de test parametrizado](_images/ejemplo_test_parametrizado.png)
+
 ## 1.5.3 Cobertura de las pruebas
 
 Aunque gracias a nuestra intuición y buen hacer, podemos crear un buen banco de pruebas, es posible que alguna de las ramas del algoritmo quede sin probar, con el correspondiente peligro que esto supone. Una forma de medir la **cobertura** de nuestro banco de pruebas sobre el código, es utilizando herramientas externas que nos muestren esto de forma gráfica. Para ello vamos a utilizar **COVERAGE**.
