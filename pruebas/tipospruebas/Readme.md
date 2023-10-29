@@ -202,7 +202,7 @@ En el apartado [1.4.1.10](../codfuente/Readme.md) se introdujeron las "**Excepci
 
 ![Lanzando una excepción generada por el usuario](_images/divisor_exception.png)
 
-Si se quiere comprobar mediantes tests que realmente se genera la excepción, podemos utilizar "**assertRaises**" tal como se muestra en la siguiente imagen (hay que prestar atención a la disposición de la función y los parámetros de entrada, ya que no sigue el patrón habitual):
+Si se quiere comprobar mediantes tests que realmente se genera la excepción, podemos utilizar "**assertRaises**" tal como se muestra en la siguiente imagen, hay que prestar atención a la disposición de la función y los parámetros de entrada, ya que no sigue el patrón habitual. El primer parámetro de assertRaises es el error que quiero comprobar que se genera (en nuestro caso "ArithmeticError"), seguido del nombre de la función a probar y por último, los dos parámetros de entrada en el orden en el que están declarados en la función original:
 
 ![Testeando la generación de la excepción](_images/divisor_test_exception.png)
 
