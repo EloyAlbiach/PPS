@@ -291,14 +291,29 @@ Que nos ofrece una forma alternativa (revisa el pie de pantalla para ver el porc
 > - coverage html
 > - coverage xml
 
-
-
-
 ## 1.5.4 Pruebas de caja negra
+Así como en la prueba de caja blanca teníamos acceso al código a testear, en la prueba de caja negra NO disponemos de los detalles de implementación del código, solo sabemos la "**funcionalidad**" del algoritmo, los parámetros de entrada y el resultado que debería obtener.
 
+![Diagrama pruebas de caja negra](_images/capsa_negra.jpg)
 
+El objetivo de este tipo de pruebas es comprobar la funcionalidad del algoritmo, basándonos en los parámetros de entrada, verificando que el resultado es el adecuado. Para ello, las pruebas de caja negra se apoyan en la técnica de la "**Partición equivalente**" y se refuerzan mediante la técnica de prueba de los "**Valores límite**".
 
+### 1.5.4.1 Partición equivalente
+La técnica de la partición equivalente consiste en determinar, para cada dominio de entrada distinto, un grupo representativo de valores de prueba, también llamados "**Clases de equivalencia**". Se obtendrán valores de prueba tanto para entradas válidas, como para entradas inválidas. Evidentemente, no se van a poder probar todos los posibles valores de entrada, or lo que se asume el riesgo de utilizar solo un rango representativo de cada dominio de entrada.
 
+Para determinar las clases de equivalencia, veremos un ejemplo de diferentes dominios de entrada:
 
+Dominio de entrada|Número de clases válidas|Número de clases inválidas
+--|--|--
+Rango de valores [10..20]|1: Valor dentro del rango (ej. 15)|2: Un valor por debajo y otro por encima del rango (ej. 7 y 22)
+Conjunto finito de valores {1, 3, 5, 7, 9, 11}|1: Valor dentro del conjunto (ej. 3)|2: Valores por debajo y por encima (ej. 0 y 13)
+Condiciones booleanas (T/F) "Valor mayor que 0"|1: Valor evaluado a True (ej. 12)|1: Valor evaluado a False (ej. -5)
+Doble rango 5 < valor < 10 y 15 < valor < 20|2: Valor rango 1 y valor rango 2 (ej. 7 y 18)|4: un valor por encima y por debajo de cada rango (ej. 3, 12, 13 y 22) aunque en este caso con 3 valores sería suficiente (3, 13, y 22).
 
+### 1.5.4.2 Análisis de valores límite
+Se especializa en probar los límites de los rangos, las estructuras y los bucles, para intentar encontrar errores. Para ello, dentro de los valores de las clases de equivalencia, escoge los valores que están justo en los límites de cada rango, pues se ha demostrado que **es aquí donde se suelen concentrar los errores**.
 
+Dominio de entrada|Número de clases válidas|Número de clases inválidas
+--|--|--
+Rango de valores [10..20]|4: Valores dentro del rango (ej. 10, 11, 19 y 20)|2: Valores por debajo y por encima del rango (ej. 9 y 21)
+Conjunto finito de valores {1, 3, 5, 7, 9, 11}|4: Valores **mínimo** y **máximo** dentro del conjunto y adyacentes (ej. 1, 3, 9 y 11)|2: Valores justo por debajo y por encima (ej. 0 y 12)
