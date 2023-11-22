@@ -45,7 +45,7 @@ NOTA IMPORTANTE:
 
 Tal como se indica en el documento ASVS "El nivel 1 (L1) es el único nivel que es completamente comprobable de penetración usando humanos. Todos los demás requieren acceso a la documentación, el código fuente, la configuración y las personas involucradas en el proceso de desarrollo".
 
-Una muestra de la guía ASVS la podemos obxervar a continuación:
+Una muestra de la guía ASVS, se puede observar a continuación:
 
 ![Extracto de la guía ASVS](_images/ASVS_2.png)
 
