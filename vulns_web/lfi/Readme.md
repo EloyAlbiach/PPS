@@ -1,3 +1,4 @@
+[Volver al inicio](../Readme.md)
 # LFI (Local File Inclusion)
 
 ## Introducción.
