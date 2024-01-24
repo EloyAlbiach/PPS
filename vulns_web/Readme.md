@@ -22,11 +22,27 @@ masivo de mensajes o registros de usuarios a través de programas automáticos
   ## 3.2 Herramientas de detección
   En función de la necesidad, podemos encontrar herramientas que nos ofrecen una variedad importante de información sobre el sitio web que queremos analizar.
 
-  ### 3.2.1 Plugins de navegador. Wappalyzer.
+  ### 3.2.1 Obtener información de la IP/Dominio
+  - DomainTools (https://whois.domaintools.com)
+  - IPChecker (https://ipinfo.info/html/ip_checker.php)
+  - IPinfo.io (https://ipinfo.io/)
+  - URLVoid para verificar reputación (https://www.urlvoid.com/)
+
+  Ejemplo de DomainTools: 
+
+  ![Ejemplo DomainTools](_images/domainTools.png)
+
+  Ejemplo de URLVoid:
+
+  ![Ejemplo URLvoid datos hosting](_images/urlvoid_1.png)
+
+  ![Ejemplo URLVoid webs reputación](_images/urlvoid_2.png)
+
+  ### 3.2.2 Plugins de navegador. Wappalyzer.
   **Wappalyzer** es una plugin para diferentes navegadores que nos permite conocer de forma muy fácil las tecnologías utilizadas en un sitio web, dependiendo claro está, de las protecciones que este ofrezca. Se puede ver un ejemplo a continuación:
   ![Herramienta wappalyzer](_images/wappalyzer.png)
 
-  ### 3.2.2 Herramientas de terceros
+  ### 3.2.3 Herramientas de terceros
   #### Nikto
   Nikto permite reconocer diferentes aspectos del sitio web analizado, como la tecnología del servidor, configuraciones de protección, directorios interesantes...
 
