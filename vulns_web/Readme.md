@@ -20,3 +20,58 @@ masivo de mensajes o registros de usuarios a través de programas automáticos
   - [RFI](rfi/Readme.md)
   - [SSRF](SSRF/Readme.md)
   ## 3.2 Herramientas de detección
+  En función de la necesidad, podemos encontrar herramientas que nos ofrecen una variedad importante de información sobre el sitio web que queremos analizar.
+
+  ### 3.2.1 Plugins de navegador. Wappalyzer.
+  **Wappalyzer** es una plugin para diferentes navegadores que nos permite conocer de forma muy fácil las tecnologías utilizadas en un sitio web, dependiendo claro está, de las protecciones que este ofrezca. Se puede ver un ejemplo a continuación:
+  ![Herramienta wappalyzer](_images/wappalyzer.png)
+
+  ### 3.2.2 Herramientas de terceros
+  #### Nikto
+  Nikto permite reconocer diferentes aspectos del sitio web analizado, como la tecnología del servidor, configuraciones de protección, directorios interesantes...
+
+  ![Nikto](_images/Nikto_ok.png)
+
+  #### Whatweb
+  Herramienta que detecta las tecnologías utilizadas en el sitio web:
+
+  ![whatweb](_images/whatweb_II.png)
+
+  #### Wig
+  Una herramienta parecida a **Whatweb** que nos ofrece resultados parecidos pero en otro formato:
+
+  ![Wig](_images/wig_II.png)
+
+  #### Dirb
+  Esta herramienta, denominada **web fuzzer**, nos permite detectar carpetas y subcarpetas de un sitio web, en base a wordlists que podemos seleccionar en /usr/share/dirb/wordlists.
+
+  ![Dirb](_images/dirb.png)
+
+  #### Dirbuster
+  Herramienta similar a **Dirb** pero con interfaz gráfica. Esta herramienta se puede configurar para que trabaje conjuntamente con **BurpSuite**, indicando que pase por el proxy, de forma que los directorios que vaya encontrando, se le pasen a BurpSuite y puedan ser analizados.
+
+  En esta primera captura se puede ver la configuración de la wordlist:
+
+  ![dirb configuración wordlist](_images/dirbuster.png)
+
+  Dirbuster nos va mostrando las pruebas realizadas y si han tenido o no éxito:
+
+  ![dirb deteccion](_images/dirbuster_II.png)
+
+  Una muestra de como configurar el proxy para que pase a través de BurpSuite:
+
+  ![dirb proxy para burpsuite](_images/dirbuster_proxy.png)
+
+  #### Gobuster
+  Una herramienta a tener en cuenta para la detección de carpetas y subcarpetas (en esta captura se ayuda de la wordlist de Dirbuster):
+
+  ![Gobuster](_images/gobuster_II.png)
+
+  ### Detección de vulnerabilidades web
+  #### ZAP (Zed Attack Proxy)
+  Se trata de un escaner de vulnerabilidades y proxy web gratuito (https://www.zaproxy.org/), ampliamente utilizado en la detección de vulnerabilidades web.
+
+  ![Zap, vista previa](_images/ZAP_1.png)
+
+  ![Zap, deteccion vulnerabilidad SQL](_images/ZAP_2.png)
+
