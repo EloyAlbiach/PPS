@@ -18,6 +18,7 @@ masivo de mensajes o registros de usuarios a través de programas automáticos
   - [IDOR](idor/Readme.md)
   - [LFI](lfi/Readme.md) 
   - [RFI](rfi/Readme.md)
+  - [CSRF](csrf/Readme.md)
   - [SSRF](SSRF/Readme.md)
   ## 3.2 Herramientas de detección
   En función de la necesidad, podemos encontrar herramientas que nos ofrecen una variedad importante de información sobre el sitio web que queremos analizar.
