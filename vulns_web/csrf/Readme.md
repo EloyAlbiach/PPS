@@ -7,7 +7,7 @@ Para que esta vulnerabilidad funcione, el atacante debe engañar a la víctima m
 - Evidentemente, el sitio debe ser vulnerable a CSRF.
 - Se debe realizar una acción relevante, tal como cambiar la contraseña o modificar el correo electrónico.
 - Que el sitio web gestione las sesiones en base a cookies y que la víctima esté logueada.
-- Que en el proceso de realizar una acción relevante, como el cambio de contraseña, **NO se exija** algún dato impredecible, como por ejemplo la contraseña actual o algún tipo de token aleatorio que envie el sitio web al usuario y que no pueda ser adivinado de antemano por el atacante.
+- Que al realizar una acción relevante, como el cambio de contraseña, **NO se exija** algún dato impredecible (por ejemplo, que no se exija la contraseña actual).
 ## ¿Cómo funciona el ataque?
 
 ## Bibliografía.
