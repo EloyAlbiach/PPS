@@ -33,7 +33,7 @@ Cookie: session=Merdf56yhujTFer612gvh8UjleursRgB
 
 email=usuarioLegitimo@sitiovulnerable.com
 ```
-El atacante debe engañar a la víctima mediante alguna estrategia de Phishing, simulando una notificación de la página web legítima, de forma que lo lleve a pulsar sobre un enlace que lo lleve a un sitio web fraudulento, realice una transacción oculta no deseada por la víctima y que beneficiará de alguna manera al atacante.
+El atacante debe engañar a la víctima mediante alguna estrategia de Phishing, simulando una notificación de la página web legítima, de forma que lo induzca a pulsar sobre un enlace que lo lleve a un sitio web fraudulento, realice una transacción oculta no deseada por la víctima y que beneficiará de alguna manera al atacante.
 
 El HTML del sitio web falso podría ser así:
 ```html
