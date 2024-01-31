@@ -19,11 +19,11 @@ Imagen obtenida de https://www.okta.com/identity-101/csrf-attack/
 
 En primer lugar, el atacante debe estudiar el funcionamiento del sitio web para entender cómo se realizan las peticiones y asegurarse de que es vulnerable a CSRF.
 
-Imaginemos que el sitio vulnerable utiliza una petición como la que se muestra a continuación para el cambio de correo electrónico:
+Imaginemos que el sitio vulnerable utiliza una petición como la que se muestra a continuación para el cambio de correo electrónico (en este caso en formato GET para que se entienda mejor académicamente):
 
 `https://sitiovulnerable.com/email/cambiar?email=usuarioLegitimo@sitiovulnerable.com`
 
-Y que esto genera la petición HTTP:
+Una muestra de la misma petición en formato POST sería:
 ```
 POST /email/change HTTP/1.1
 Host: sitiovulnerable.com
