@@ -1,7 +1,7 @@
 [Volver al inicio](../Readme.md)
 # CSRF (Cross Site Request Forgery)
 ## Introducción.
-Muchas aplicaciones web utilizan algún método de autenticación para poder realizar operaciones sensibles/críticas tales como modificar la contraseña de acceso, cambio de correo electrónico, etc. ESta autenticación es a menudo realizada en base a sesiones de usuario, de forma que una vez autenticado, se genera una cookie que se almacena en el equipo de dicho usuario. El identificador de sesión que se guarda en la cookie, será enviado en cada una de las transacciones que se realicen en esa aplicación web.
+Muchas aplicaciones web utilizan algún método de autenticación para poder realizar operaciones sensibles/críticas tales como modificar la contraseña de acceso, cambio de correo electrónico, etc. Esta autenticación es a menudo realizada en base a sesiones de usuario, de forma que una vez autenticado, se genera una cookie que se almacena en el equipo de dicho usuario. El identificador de sesión que se guarda en la cookie, será enviado en cada una de las transacciones que se realicen en esa aplicación web.
 
 De forma adicional, debemos saber que cuando nos conectamos a un sitio web, algunos de los recursos que utiliza, son cargados desde otro sitio, ya sean imágenes, fuentes de texto, etc. Esto significa que cuando nos logueamos en un sitio web, tanto las peticiones que nosotros realizamos como las que se utilizan para cargar los diferentes recursos del sitio web, van acompañadas de nuestro identificador de sesión. Esta particularidad, ayuda a que se consiga el ataque mediante CSRF.
 No obstante, se necesitan algunas condiciones adicionales para que el ataque mediante CSRF sea efectivo.
@@ -17,7 +17,7 @@ No obstante, se necesitan algunas condiciones adicionales para que el ataque med
 
 Imagen obtenida de https://www.okta.com/identity-101/csrf-attack/
 
-En primer lugar, el atacante debe estudiar el funcionamiento del sitio web para entender el funcionamiento y asegurarse de que es vulnerable a CSRF.
+En primer lugar, el atacante debe estudiar el funcionamiento del sitio web para entender cómo se realizan las peticiones y asegurarse de que es vulnerable a CSRF.
 
 Imaginemos que el sitio vulnerable utiliza una petición como la que se muestra a continuación para el cambio de correo electrónico:
 
