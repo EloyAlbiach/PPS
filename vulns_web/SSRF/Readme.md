@@ -1,8 +1,8 @@
 [Volver al inicio](../Readme.md)
 # SSRF (Server Side Request Forgery)
 ## Introducción.
-En múltiples aplicaciones, un servidor puede necesitar del acceso a diversos datos que son servidos mediante APIs, estas APIS, pueden ser remotas o locales. En muchas ocasiones, el acceso a las APIs es privado, por lo que un atacante no puede acceder directamente, pero sí son accesibles a través de servidores autorizados.
-La idea del ataque, es aprovechar servidores vulnerables a SSRF para poder acceder a través de ellos a zonas internas de los servidores de APIs y así poder exfiltrar información sensible, entre otras acciones.
+En múltiples aplicaciones, un servidor puede necesitar del acceso a diversos datos que son servidos mediante APIs, estas APIS pueden ser remotas o locales. En muchas ocasiones, el acceso a las APIs es privado, por lo que un atacante no puede acceder directamente, pero sí son accesibles a través de servidores autorizados.
+La idea del ataque es, aprovechar servidores vulnerables a SSRF, para poder acceder a través de ellos a zonas internas de los servidores de APIs y así poder exfiltrar información sensible, entre otras acciones.
 
 ![Esquema servicio con API](_images/SSRF_2.jpg)
 
