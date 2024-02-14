@@ -4,7 +4,9 @@
 El ataque XSS consiste en inyectar codigo Javascript malicioso en un sitio web vulnerable, de forma que al ser cargado por un usuario víctima, se ejecute en su navegador dicho código malicioso, con el objetivo de extraer información de la víctima, como por ejemplo, la cookie de sessión. Existen básicamente tres tipos de ataques (sin tener en cuenta los ataques XSS ciegos):
 ## Tipos de XSS
 ### XSS Reflejados
-Este tipo de ataque se aprovecha de una deficiente o nula sanitización de los parametros de entrada, procedentes por ejemplo, de un formulario HTML del sitio web. Imaginemos un sitio web que tiene el siguiente código HTML para buscar un producto:
+Este tipo de ataque se aprovecha de una deficiente o nula sanitización de los parametros de entrada, procedentes por ejemplo, de un formulario HTML del sitio web. 
+
+Imaginemos un sitio web que tiene el siguiente código HTML para buscar un producto:
 ```html
 <!DOCTYPE html>
 <html>
