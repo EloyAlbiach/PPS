@@ -56,7 +56,7 @@ if(isset($_GET['id_producto'])) {
     }
 } else {
     // Si el parámetro "id_producto" no se proporcionó en la URL
-    echo "Debe proporcionar un parámetro 'id_producto' en la URL.";
+    echo "Debe proporcionar un identificador de producto.";
 }
 
 // Cerrar conexión
