@@ -21,6 +21,7 @@ masivo de mensajes o registros de usuarios a través de programas automáticos
   - [CSRF](csrf/Readme.md)
   - [SSRF](SSRF/Readme.md)
   - [XSS](xss/Readme.md)
+  - [SSTI](ssti/Readme.md)
   ## 3.2 Herramientas de detección
   En función de la necesidad, podemos encontrar herramientas que nos ofrecen una variedad importante de información sobre el sitio web que queremos analizar.
 
@@ -92,4 +93,12 @@ masivo de mensajes o registros de usuarios a través de programas automáticos
   ![Zap, vista previa](_images/ZAP_1.png)
 
   ![Zap, deteccion vulnerabilidad SQL](_images/ZAP_2.png)
+
+  ## 3.3 Guia para securizar las aplicaciones web
+  Estas recomendaciones han sido recopiladas del documento "Web Security Testing Guide v4.2" de OWASP.
+
+  ## Bibliografía
+
+  - Saad, E. Mitchell, R. (s.f.). Web Security Testing Guide Version 4.2. OWASP. https://owasp.org/www-project-web-security-testing-guide/v42/ 
+  
 
