@@ -88,13 +88,13 @@ Este script, envia por POST la cookie de sesión a un sitio web controlado por e
 Un enlace que podría recibir la víctima a través de un phishing se parecería a la siguiente:
 
 ```
-http://misitioweb.com/xss1.php?id_producto=<script>código malicioso</script>
+http://sitioweblegitimo.com/xss1.php?id_producto=<script>código malicioso</script>
 ```
 
 Posteriormente, el atacante, previo estudio del funcionamiento del sitio web que pretende atacar y conociendo las peticiones que utiliza el sitio web, puede intentar acciones maliciosas utilizando las cookies robadas:
 
 ```
-curl -X GET https://misitioweb.com/protected-page.php -H "Cookie: PHPSESSID=SESSION_ID_ROBADA"
+curl -X GET https://sitioweblegitimo.com/protected-page.php -H "Cookie: PHPSESSID=SESSION_ID_ROBADA"
 
 ```
 
