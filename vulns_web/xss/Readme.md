@@ -114,6 +114,53 @@ En este tipo de vulnerabilidad, el atacante aplica el payload sobre un elemento 
 ![Proceso ataque XSS almacenado](_images/xss_almacenado.jpg)
 
 ### DOM XSS
+El DOM (Document Object Model) permite representar los elementos o etiquetas de la página HTML en una especie de estructura jerárquica de nodos. Por ejemplo, dado el siguiente código HTML:
+
+```HTML
+    <html>
+        <head>
+            <title></title>
+        </head>
+        <body>
+            <header>
+                <h1></h1>
+            </header>
+            <main>
+                <p></p>
+            </main>
+        </body>
+    </html>
+```
+
+Se puede representar el DOM como:
+
+![DOM del HTML](_images/DOM.jpg)
+
+Una de las caracterísricas de Javascript, es que puede modificar el DOM para añadir elementos de forma dinámica. Esta característica, puede ser aprovechada por un atacante para incluir código malicioso en la página web de la víctima mediante Phishing y un enlace.
+
+La verdadera peligrosidad de este tipo de ataque, reside en que en la parte de servidor, no se interpreta el payload enviado, ya que por la construcción de la página web, esto se realizará mediante el código javascript asociado, por lo que el payload pasará desapercibido para el servidor y será ejecutado en el navegador de la víctima cuando se ejecute el javascript.
+
+Imagina el siguiente código PHP, que permite leer una entrada de búsqueda y mediante **JAVASCRIPT**, modificar el DOM y añadir el resultado de la búsqueda dentro de la estructura HTML:
+
+![search javascript code](_images/search_javascript_code.png)
+
+El código PHP no realiza funciones de modificación del DOM, sino que esta parte corre a cuenta del javascript, que mediante el **"innerHTML"**, modifica la estructura de la página web.
+
+Si añadimos al campo de búsqueda un payload del tipo:
+
+```
+<img src="x" onerror='alert("hackeado");'>
+```
+Podremos observar que el elemento "img" es cargado en el DOM de la página web y además, se ejecuta el payload asociado (onerror='alert()'). A tener en cuenta que en la respuesta del servidor (Network -> Response), no aparece el elemento imagen, que es creado posteriormente en el navegador por javascript:
+
+![Ataque DOM XSS en acción](_images/DOM_XSS_in_action.png)
+
+Una vez aceptado el ALERT, podemos ver como aparece creada la imagen en la estructura de la página web. Si se observa la captura anterior, en el mensaje de respuesta del servidor NO aparece la imagen dentro del div.
+
+![Payload cargado en el DOM del documento](_images/DOM_XSS_executed.png)
+
+En resumen, hay que entender que un Javascript no sanitizado (o incorrectamente sanitizado), permite la ejecución de código inyectado por el atacante en el momento que la página es recibida desde el servidor. El servidor no es consciente del payload pues simplemente lo pasa como parámetro para que sea ejecutado por el javascript.
+
 ## Bibliografía
 - Cross-site scripting. PortSwigger. https://portswigger.net/web-security/cross-site-scripting#what-is-cross-site-scripting-xss
 - DOM Based XSS. OWASP. https://owasp.org/www-community/attacks/DOM_Based_XSS
@@ -123,3 +170,8 @@ En este tipo de vulnerabilidad, el atacante aplica el payload sobre un elemento 
 - García de Zúñiga, F. (24/08/2022). CSP: Content Security Policy. ARSYS. https://www.arsys.es/blog/csp-content-security-policy
 - axarnet. (s.f.). Qué es el Cross Site Scripting (XSS) y cómo evitarlo. https://axarnet.es/blog/cross-site-scripting-xss#
 - Lázaro, D. (2018). Ataques XSS: Cross-Site Scripting en PHP. https://diego.com.es/ataques-xss-cross-site-scripting-en-php
+- Hickling, Josh. (2021). What is DOM XSS and why should you care?, Computer Fraud & Security, Volume 2021, Issue 4, 2021, https://www.sciencedirect.com/science/article/pii/S1361372321000403
+- Klein, A. (07/04/2005). DOM Based Cross Site Scripting or XSS of the Third Kind. A look at an overlooked flavor of XSS. https://docs.gnet0.com/ebooks/XSS/DOM%20Based%20Cross%20Site%20Scripting%20or%20XSS%20of%20the%20Third%20Kind.pdf
+- Lekies, S. et al. (2013). 25 million flows later: large-scale detection of DOM-based XSS. https://swag.cispa.saarland/papers/lekies2013flows.pdf
+- Unguess. (09/08/2023). Advanced Analysis of DOM-Based Cross-Site Scripting (XSS).  https://blog.unguess.io/analysis-dom-based-cross-site-scripting-xss
+- Shashank, G. and Pooja, C. (Marzo de 2017). Enhancing the Browser-Side Context-Aware Sanitization of Suspicious HTML5 Code for Halting the DOM-Based XSS Vulnerabilities in Cloud. International Journal of Cloud Applications and Computing. DOI: 10.4018/IJCAC.2017010101. https://www.researchgate.net/publication/314153524_Enhancing_the_Browser-Side_Context-Aware_Sanitization_of_Suspicious_HTML5_Code_for_Halting_the_DOM-Based_XSS_Vulnerabilities_in_Cloud?enrichId=rgreq-9ed4c6f6858b5aa70f3df40188e8c61d-XXX&enrichSource=Y292ZXJQYWdlOzMxNDE1MzUyNDtBUzo1MDA4NDA1NDU5NTE3NDRAMTQ5NjQyMTA5OTc4Nw%3D%3D&el=1_x_2&_esc=publicationCoverPdf
