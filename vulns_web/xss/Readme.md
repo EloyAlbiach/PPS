@@ -161,6 +161,15 @@ Una vez aceptado el ALERT, podemos ver como aparece creada la imagen en la estru
 
 En resumen, hay que entender que un Javascript no sanitizado (o incorrectamente sanitizado), permite la ejecución de código inyectado por el atacante en el momento que la página es recibida desde el servidor. El servidor no es consciente del payload pues simplemente lo pasa como parámetro para que sea ejecutado por el javascript.
 
+## Prevención de los ataques XSS
+Existen diferentes formas de prevenir ataques XSS:
+
+* Filtrar las entradas, por ejemplo, en PHP mediante **htmlspecialchars**: ```$input_user = htmlspecialchars($_GET['user]);``` 
+* Codificar los datos en la salida HTML del servidor, "<" por "& lt;"
+* Aplicar a las cabeceras HTML ```Content-Type``` o bien ```X-Content-Type-Options ```
+* Aplicar políticas de seguridad **Content Security Police (CSP)**
+
+
 ## Bibliografía
 - Cross-site scripting. PortSwigger. https://portswigger.net/web-security/cross-site-scripting#what-is-cross-site-scripting-xss
 - DOM Based XSS. OWASP. https://owasp.org/www-community/attacks/DOM_Based_XSS
