@@ -5,4 +5,4 @@
 - Detección de problemas de seguridad en aplicaciones para dispositivos móviles.
 - Implantación de sistemas seguros de desplegado de software.
 
-Eloy Albiach Forner. IES Camp de Morvedre (2023)
+Apuntes de Puesta en Producción Segura © 2023 by Eloy Albiach Forner is licensed under CC BY-NC-SA 4.0 
