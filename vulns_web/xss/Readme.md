@@ -161,6 +161,14 @@ Una vez aceptado el ALERT, podemos ver como aparece creada la imagen en la estru
 
 En resumen, hay que entender que un Javascript no sanitizado (o incorrectamente sanitizado), permite la ejecución de código inyectado por el atacante en el momento que la página es recibida desde el servidor. El servidor no es consciente del payload pues simplemente lo pasa como parámetro para que sea ejecutado por el javascript.
 
+
+## Ejemplos de PAYLOADS ofuscados para evitar ser detectados
+Imágenes obtenidas de Fang, Y et al. (27/06/2020). Providing Email Privacy by Preventing Webmail from Loading Malicious XSS Payloads. ResearchGate. DOI:10.3390/app10134425. https://www.researchgate.net/publication/342527635_Providing_Email_Privacy_by_Preventing_Webmail_from_Loading_Malicious_XSS_Payloads
+
+![Ejemplo 1 XSS payload codificado](_images/encoded1.png)
+
+![Ejemplo 2 XSS payload codificado](_images/encoded2.png)
+
 ## Prevención de los ataques XSS
 Existen diferentes formas de prevenir ataques XSS:
 
@@ -184,3 +192,4 @@ Existen diferentes formas de prevenir ataques XSS:
 - Lekies, S. et al. (2013). 25 million flows later: large-scale detection of DOM-based XSS. https://swag.cispa.saarland/papers/lekies2013flows.pdf
 - Unguess. (09/08/2023). Advanced Analysis of DOM-Based Cross-Site Scripting (XSS).  https://blog.unguess.io/analysis-dom-based-cross-site-scripting-xss
 - Shashank, G. and Pooja, C. (Marzo de 2017). Enhancing the Browser-Side Context-Aware Sanitization of Suspicious HTML5 Code for Halting the DOM-Based XSS Vulnerabilities in Cloud. International Journal of Cloud Applications and Computing. DOI: 10.4018/IJCAC.2017010101. https://www.researchgate.net/publication/314153524_Enhancing_the_Browser-Side_Context-Aware_Sanitization_of_Suspicious_HTML5_Code_for_Halting_the_DOM-Based_XSS_Vulnerabilities_in_Cloud?enrichId=rgreq-9ed4c6f6858b5aa70f3df40188e8c61d-XXX&enrichSource=Y292ZXJQYWdlOzMxNDE1MzUyNDtBUzo1MDA4NDA1NDU5NTE3NDRAMTQ5NjQyMTA5OTc4Nw%3D%3D&el=1_x_2&_esc=publicationCoverPdf
+- Fang, Y et al. (27/06/2020). Providing Email Privacy by Preventing Webmail from Loading Malicious XSS Payloads. ResearchGate. DOI:10.3390/app10134425. https://www.researchgate.net/publication/342527635_Providing_Email_Privacy_by_Preventing_Webmail_from_Loading_Malicious_XSS_Payloads
