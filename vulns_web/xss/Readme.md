@@ -136,7 +136,7 @@ Se puede representar el DOM como:
 
 ![DOM del HTML](_images/DOM.jpg)
 
-Una de las caracterísricas de Javascript, es que puede modificar el DOM para añadir elementos de forma dinámica. Esta característica, puede ser aprovechada por un atacante para incluir código malicioso en la página web de la víctima mediante Phishing y un enlace.
+Una de las características de Javascript, es que puede modificar el DOM para añadir elementos de forma dinámica. Esta característica, puede ser aprovechada por un atacante para incluir código malicioso en la página web de la víctima mediante Phishing y un enlace.
 
 La verdadera peligrosidad de este tipo de ataque, reside en que en la parte de servidor, no se interpreta el payload enviado, ya que por la construcción de la página web, esto se realizará mediante el código javascript asociado, por lo que el payload pasará desapercibido para el servidor y será ejecutado en el navegador de la víctima cuando se ejecute el javascript.
 
